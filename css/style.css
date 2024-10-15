@@ -87,6 +87,23 @@
   .navbar-toggler[aria-expanded="true"] {
     border-color: gray; }
 
+.img-liner {
+  padding: 5px;
+  overflow: hidden;
+  position: relative; }
+  .img-liner::before {
+    content: attr(data-work);
+    position: absolute;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: rgba(181, 163, 0, 0.457);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem; }
+
 .blurred-image {
   filter: blur(3px);
   /* Apply the blur */ }
