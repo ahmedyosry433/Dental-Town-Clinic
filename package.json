@@ -1,7 +1,7 @@
 {
-  "name": "eletreby",
+  "name": "dental-town",
   "version": "1.0.0",
-  "description": "Dental Center",
+  "description": "Dental Clinic",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
