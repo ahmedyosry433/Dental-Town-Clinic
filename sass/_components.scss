@@ -1,0 +1,162 @@
+
+:root {
+    --primary-color: rgb(220, 202, 8);
+    --light-primary-color: rgb(245, 239, 174);
+}
+
+
+.prim-color {
+    background-color: var(--primary-color);
+    color: white;
+    
+}
+.nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: white;
+    outline:none
+}
+
+.navbar-toggler {
+    color: white;
+    border-color:white ;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+    border-color:gray ;
+
+}
+.main-btn {
+    background-color: white;
+    padding: 1rem 5rem;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    &:hover {
+    
+        background-color: black;
+        color: white;
+    }
+}
+.secondery-btn {
+    background-color: black;
+    text-transform: capitalize;
+    color: white;
+    padding: 1rem 5rem;
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+    
+}
+.logo-img {
+    width: 7rem;
+    margin-left: 8rem;
+}
+
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    position: absolute;
+    height: 2px;
+    background-color: var(--primary-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.landing {
+    height: 80vh;
+    background-color: var(--primary-color);
+}
+
+.features {
+    .icon-holder {
+        height: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        & .number {
+            font-size: 12rem;
+            opacity: .03;
+        }
+        & .icon {
+            color: var(--primary-color);
+        }
+    }
+    
+}
+
+.our-work {
+    background-color: var( --light-primary-color);
+    & ul {
+        &.active {
+            background-color: white;
+            
+        }
+        & li {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            &:not(.active):hover {
+                color: var(--primary-color);
+            }
+            
+        }
+    }
+    & .box {
+        padding: 5px;
+        overflow: hidden;
+        position: relative;
+        &::before{
+            content: attr(data-work);
+            position: absolute;
+            height: calc(100% - 10px);
+            width: calc(100% - 10px);
+            background-color: rgba(181, 163, 0, 0.457);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            transition: all 0.3s ease-in;
+        
+            font-size: 1.5rem;
+            transform: translateX(calc(-100% - 5px ));
+        } 
+        &:hover::before {
+            transform: translateX(0);
+        
+        }
+    }
+}
+.stuff {
+    margin-top: 15rem;
+
+    & .description {
+        max-width: 50rem;
+    }
+}
+.team {
+    background-color: var(--light-primary-color);
+    & .box h4 {
+        background-color: var(--primary-color);
+        color:white;
+    }
+}
+.project {
+    background-color: var(--primary-color);
+}
+.subscribe {
+    background-color: lightgray;
+    & .input-felid {
+        border: none;
+        border-bottom: 1px solid var(--light-primary-color);
+        &:focus {
+            outline: none;
+        }
+    }
+}
+.footer {
+    background-color: var(--primary-color);
+}
