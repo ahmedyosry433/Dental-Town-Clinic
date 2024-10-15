@@ -1,0 +1,31 @@
+:root {
+    --primary-color: rgb(220, 202, 8);
+    --light-primary-color: rgb(245, 239, 174);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; 
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+    font-weight: 400;
+    direction: rtl;
+}
