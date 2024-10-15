@@ -15,11 +15,14 @@
 .plight-color{
     background-color: var(--light-primary-color);
 }
+.linar-color{
+    background-image:linear-gradient(to right, rgb(220, 182, 69), rgb(220, 202, 8),rgb(223, 213, 26) );
+}
 .navbar.scrolled {
     background-color: var(--primary-color); 
     border-bottom: 1px solid white;
     animation: showHidden 0.7s linear ;
-    
+
   }
 .nav-link.active,
 .navbar-nav .nav-link:focus,
@@ -192,7 +195,8 @@ dialog::backdrop {
     }
 }
 .landing {
-max-height: 80rem;    background-color: var(--primary-color);
+    max-height: 80rem;    
+    background-color: var(--linear-color);
 }
 
 .features {
