@@ -3,13 +3,24 @@
     --primary-color: rgb(220, 202, 8);
     --light-primary-color: rgb(245, 239, 174);
 }
-
+.sub-nav {
+    height: 4vh;
+}
 
 .prim-color {
     background-color: var(--primary-color);
     color: white;
     
 }
+.plight-color{
+    background-color: var(--light-primary-color);
+}
+.navbar.scrolled {
+    background-color: var(--primary-color); 
+    border-bottom: 1px solid white;
+    animation: showHidden 0.7s linear ;
+    
+  }
 .nav-link.active,
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:hover {
@@ -59,6 +70,38 @@
 
 
 ////////////////////////////////
+/// 
+.contact-icons {
+    position: fixed;
+    bottom: 2rem;
+    left:2rem;
+    z-index: 1030;
+}
+.contact-icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 10px;
+    transition: transform 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+        transform: scale(1.1);
+        border: none;
+    }
+}
+
+.icon-label {
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateX(10px);
+    margin-left: 1rem;
+}
+.contact-item:hover .icon-label {
+    opacity: 1;
+    transform: translateX(0);
+    
+}
 /// 
 
 
@@ -149,8 +192,7 @@ dialog::backdrop {
     }
 }
 .landing {
-    height: 80vh;
-    background-color: var(--primary-color);
+max-height: 80rem;    background-color: var(--primary-color);
 }
 
 .features {
