@@ -194,24 +194,26 @@ dialog::backdrop {
     }
 }
 .landing {
-    max-height: 80rem;    
     background-color: var(--linear-color);
 }
 
-.features {
-    .icon-holder {
-        height: 200px;
-        left: 50%;
-        transform: translateX(-50%);
-        & .number {
-            font-size: 12rem;
-            opacity: .03;
-        }
-        & .icon {
-            color: var(--primary-color);
-        }
+.service-card {
+    margin-top: 5rem;
+    height: 50rem;
+       
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+      
+       &:hover {
+        transform: rotate(1deg) scale(1) translateY(-20px);
+
+        
     }
-    
+    & >img {
+        height: 20rem;
+    }
+   
 }
 
 .our-work {
@@ -234,34 +236,33 @@ dialog::backdrop {
         padding: 5px;
         overflow: hidden;
         position: relative;
-        &::before{
-            content: attr(data-work);
-            position: absolute;
-            height: calc(100% - 10px);
-            width: calc(100% - 10px);
-            background-color: rgba(181, 163, 0, 0.457);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            color: white;
-            transition: all 0.3s ease-in;
         
-            font-size: 1.5rem;
-            transform: translateX(calc(-100% - 5px ));
-        } 
-        &:hover::before {
-            transform: translateX(0);
-        
-        }
     }
 }
 .stuff {
     margin-top: 15rem;
 
-    & .description {
-        max-width: 80rem;
-    }
+    
+}
+.initial-image {
+    transition: all 1s ease-in-out;
+}
+
+.hidden-image {
+  
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s ease-in-out;
+}
+
+
+.show {
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+    transition: all 1s ease-in-out;
+
 }
 .footer {
     background-color: var(--primary-color);
