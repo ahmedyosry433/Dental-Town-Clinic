@@ -77,9 +77,6 @@
   --primary-color: rgb(220, 202, 8);
   --light-primary-color: rgb(245, 239, 174); }
 
-.sub-nav {
-  height: 4vh; }
-
 .prim-color {
   background-color: var(--primary-color);
   color: white; }
