@@ -242,7 +242,15 @@ dialog::backdrop {
   .service-card > img {
     height: 20rem; }
 
+.stuff {
+  margin-top: 10rem;
+  margin-bottom: 10rem; }
+
+.services {
+  margin-bottom: 10rem; }
+
 .our-work {
+  margin-bottom: 10rem;
   background-color: var(--light-primary-color); }
   .our-work ul.active {
     background-color: white; }
@@ -256,8 +264,11 @@ dialog::backdrop {
     overflow: hidden;
     position: relative; }
 
-.stuff {
-  margin-top: 15rem; }
+.rate {
+  margin-bottom: 10rem; }
+
+.footer {
+  background-color: var(--primary-color); }
 
 .initial-image {
   transition: all 1s ease-in-out; }
@@ -273,9 +284,6 @@ dialog::backdrop {
   height: auto;
   overflow: visible;
   transition: all 1s ease-in-out; }
-
-.footer {
-  background-color: var(--primary-color); }
 
 :root {
   --primary-color:#C0C0C0;

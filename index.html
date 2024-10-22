@@ -37,16 +37,26 @@
                                 href="tel:+201101118439">&nbsp; 01101118439</a> </span>
                     </div>
                     <div class="info-content ps-5">
+                        <i class="fa-solid fa-kit-medical text-danger"></i>
+                        <span class="fs-5"><a class="text-decoration-none text-danger fw-bold"
+                                href="tel:+201000178009">&nbsp;
+                                01000178009</a> </span>
+                    </div>
+                    <div class="info-content ps-5">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span class="fs-5"><a class="text-decoration-none text-black fw-bold" href="#">&nbsp; الجيزه:
+                        <span class="fs-5"><a class="text-decoration-none text-black fw-bold"
+                                href="https://maps.google.com/?q=29.988819,31.146511">&nbsp; الجيزه:
                                 شارع الهرم برج كريستال</a> </span>
                     </div>
                 </div>
                 <div class="info-social ">
-                    <a class="ps-3" href="#"><i class="fab fa-facebook-square text-black "></i></a>
-                    <a class="ps-3" href="#"><i class="fab fa-instagram text-black"></i></a>
-                    <a class="ps-3" href="#"><i class="fab fa-twitter text-black"></i></a>
-                    <a class="ps-3" href="#"><i class="fab fa-youtube text-black"></i></a>
+                    <a class="ps-4" href="https://www.facebook.com/share/PB6pLgXQyAiFf6yh/?mibextid=LQQJ4d"><i
+                            class="fab fa-facebook-square text-black fs-2"></i></a>
+                    <a class="ps-4"
+                        href="https://www.instagram.com/dtown.eg?igsh=MWsyeDVtOXNtbXJ0ag%3D%3D&utm_source=qr"><i
+                            class="fab fa-instagram text-black fs-2"></i></a>
+                    <a class="ps-4" href="https://wa.me/+201101118439"><i
+                            class="fa-brands fa-whatsapp text-black fs-2"></i></a>
                 </div>
             </div>
         </div>
@@ -89,18 +99,27 @@
     <!-- Start Card Info -->
     <div class="contact-icons">
         <div class="contact-item d-flex align-items-center">
-            <span class="icon-label bg-secondary text-white p-2 rounded ">Phone</span>
-            <button class="contact-icon d-flex align-items-center justify-content-center btn btn-primary"
-                onclick="alert('Calling...')">
+            <span class="icon-label bg-secondary text-white p-2 rounded bg-dark">موبايل &nbsp;</span>
+            <button class="contact-icon d-flex align-items-center justify-content-center btn btn-primary bg-dark"
+                onclick="makeCall(+201101118439)">
                 <i class="fas fa-phone fs-2"></i>
             </button>
         </div>
-        <div class="contact-item d-flex align-items-center mt-2">
-            <span class="icon-label bg-secondary text-white p-2 rounded ">Mobile</span>
-            <button class="contact-icon btn btn-success">
-                <i class="fas fa-mobile-alt fs-2"></i>
+        <div class="contact-item d-flex align-items-center">
+            <span class="icon-label bg-danger text-white p-2 rounded ">طوارئ &nbsp;</span>
+            <button class="contact-icon d-flex align-items-center justify-content-center btn btn-primary bg-danger "
+                onclick="emgMakeCall()">
+                <i class="fa-solid fa-kit-medical fs-2"></i>
             </button>
         </div>
+        <div class="contact-item d-flex align-items-center">
+            <span class="icon-label bg-success text-white p-2 rounded ">واتساب</span>
+            <button class="contact-icon d-flex align-items-center justify-content-center btn btn-primary bg-success "
+                onclick="makeWhats()">
+                <i class="fa-brands fa-whatsapp fs-1 "></i>
+            </button>
+        </div>
+
     </div>
     <!-- End Card Info -->
     <!-- Start Landing -->
@@ -120,27 +139,16 @@
                         <div class="carousel-item active img-liner" data-bs-interval="10000">
                             <img src="img/t-5.jpeg" class="d-block rounded img-fluid" alt="Slider 1">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>نقدم لك Dental Town علي جميع الخدمات التي نقدمها لك من (زراعة للأسنان & تجميل
-                                    الأسنان
-                                    &
-                                    ….) وغيرها من الخدمات، يقدمها لك فريق طبي مميز مستخدماً أحدث التكولوجيا في مجال
-                                    طب
-                                    الأسنان.</p>
                             </div>
                         </div>
                         <div class="carousel-item img-liner" data-bs-interval="2000">
                             <img src="img/t-9.jpeg" class="d-block img-fluid rounded" alt="Slider 2">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item img-liner">
                             <img src="img/t-8.jpeg" class="d-block img-fluid rounded" alt="slider3">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
                     </div>
@@ -168,7 +176,7 @@
                         للأسنان & تجميل الأسنان & ….) وغيرها من الخدمات، يقدمها لك فريق طبي مميز مستخدماً أحدث
                         التكولوجيا في مجال طب الأسنان.
                     </p>
-                    <a href="#appointment" class=" btn main-btn rounded-pill mb-5">احجز معنا</a>
+                    <a href="#appointment" class=" btn main-btn rounded-pill border-secondary mb-5">احجز معنا</a>
                 </div>
             </div>
         </div>
@@ -416,7 +424,7 @@
             <div class="main-title mt-5 mb-5 position-relative text-center ">
                 <h2 class="fs-1">احجز معانا </h2>
             </div>
-            <div class="row ">
+            <div class="row pt-5">
                 <div class="col-md-6 col-lg-5 ">
                     <form action="POST" class="me-lg-5" validate>
                         <input type="text" class="form-control pt-3 pb-3 fs-4 mb-5" placeholder="اسم المريض"
@@ -475,7 +483,8 @@
                                     بعد</a></li>
                             <li class="pb-4 fs-4"><a class="text-decoration-none text-light" href="#rate">آراء
                                     العملاء</a></li>
-                            <li class="fs-4"><a class="text-decoration-none text-light" href="#">احجز معنا</a></li>
+                            <li class="fs-4"><a class="text-decoration-none text-light" href="#appointment">احجز
+                                    معنا</a></li>
                         </ul>
 
                     </div>
@@ -485,14 +494,20 @@
                         <h5 class="text-black fs-2 fw-bold">اتصل بنا</h5>
 
                         <ul class=" mt-5 list-unstyled fs-3 ">
-                            <li class="pt-5"> <i class="fa-solid fa-location-dot fs-1 text-black-50"></i>&nbsp; الجيزه:
-                                شارع الهرم
-                                برج
-                                كريستال
+                            <li><a class="text-decoration-none text-light"
+                                    href="https://maps.google.com/?q=29.988819,31.146511"><i
+                                        class="fa-solid fa-location-dot fs-1 text-black-50"></i>&nbsp;الجيزه: شارع
+                                    الهرم برج كريستال
+                                </a>
                             </li>
                             <li class="pt-5 fw-bold"><a class="text-decoration-none text-light"
-                                    href="tel:01000178009"><i
+                                    href="tel:+201101118439"><i
                                         class="fa-solid fa-square-phone-flip fs-1 text-black-50"></i>&nbsp;
+                                    01101118439</a>
+                            </li>
+                            <li class="pt-5 fw-bold"><a class="text-decoration-none text-danger"
+                                    href="tel:+201000178009"><i
+                                        class="fa-solid fa-kit-medical text-danger fs-1"></i>&nbsp;
                                     01000178009</a>
                             </li>
                             <li class="pt-5 fs-4 fw-bold"><i
@@ -502,9 +517,14 @@
 
                         </ul>
                         <ul class="d-flex mt-5 list-unstyled gap-5 text-black-50  justify-content-center ">
-                            <li><i class="fa-brands fa-facebook fa-2x"></i></li>
-                            <li><i class="fa-brands fa-instagram fa-2x"></i></li>
-                            <li><i class="fa-brands fa-whatsapp fa-2x"></i></li>
+                            <li><a class="text-black"
+                                    href="https://www.facebook.com/share/PB6pLgXQyAiFf6yh/?mibextid=LQQJ4d"><i
+                                        class="fa-brands fa-facebook fa-2x"></i></a></li>
+                            <li><a class="text-black"
+                                    href="https://www.instagram.com/dtown.eg?igsh=MWsyeDVtOXNtbXJ0ag%3D%3D&utm_source=qr"><i
+                                        class="fa-brands fa-instagram fa-2x"></i></a></li>
+                            <li><a class="text-black" href="https://wa.me/+201101118439"><i
+                                        class="fa-brands fa-whatsapp fa-2x"></i></a></li>
                         </ul>
                     </div>
 
@@ -516,7 +536,15 @@
     <!-- End Footer -->
     <script>
 
-
+        function makeCall() {
+            window.location.href = "tel:+201101118439";
+        }
+        function emgMakeCall() {
+            window.location.href = "tel:+201000178009";
+        }
+        function makeWhats() {
+            window.location.href = "https://wa.me/+201101118439";
+        }
         const button = document.getElementById('animatedButton');
         const dialog = document.getElementById('videoDialog');
         const closeButton = document.getElementById('closeDialog');
