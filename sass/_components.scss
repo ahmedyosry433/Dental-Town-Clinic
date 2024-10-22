@@ -1,10 +1,4 @@
 
-:root {
-    --primary-color: rgb(220, 202, 8);
-    --light-primary-color: rgb(245, 239, 174);
-}
-
-
 .prim-color {
     background-color: var(--primary-color);
     color: white;
@@ -14,7 +8,7 @@
     background-color: var(--light-primary-color);
 }
 .linar-color{
-    background-image:linear-gradient(to right, rgb(220, 182, 69), rgb(220, 202, 8),rgb(223, 213, 26) );
+    background-image:linear-gradient(to right, #C0C0C0, #e0e0e0,#f4f1f1 );
 }
 .navbar.scrolled {
     background-color: var(--primary-color); 
@@ -51,7 +45,7 @@
             position: absolute;
             height: calc(100% - 10px);
             width: calc(100% - 10px);
-            background-color: rgba(181, 163, 0, 0.457);
+            background-color: #c1c0c07d;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -6,30 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Town</title>
     <link rel="icon" href="img/favicon.png">
-
-
     <!-- Styles  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
     <!-- JS Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.5.6/dialog-polyfill.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.5.6/dialog-polyfill.min.css">
-
     <!-- Tajwal Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
-
-
-    <!-- End Card Info -->
     <!-- Start Navbar -->
     <nav class="  sub-nav  plight-color pt-3 pb-3 d-none d-lg-block">
         <div class="container">
@@ -69,7 +61,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-
                     <li class="nav-item ps-5">
                         <a class="nav-link p-3 p-lg-3 " href="#">الرئيسية</a>
                     </li>
@@ -89,10 +80,8 @@
                         <a class="nav-link p-3 p-lg-3" href="#">اتصل بنا</a>
                     </li>
                 </ul>
-
-                <button type="button" class=" btn main-btn rounded-pill border border-secondary">احجز الان</button>
-
-
+                <button type="button" class=" btn main-btn rounded-pill border border-secondary d-block d-md-none ">احجز
+                    الان</button>
             </div>
         </div>
     </nav>
@@ -116,8 +105,6 @@
     <!-- End Card Info -->
     <!-- Start Landing -->
     <div class="landing linar-color pt-5">
-
-
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-lg-6">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
@@ -168,7 +155,6 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
             </div>
             <div class="col-lg-6">
                 <div class="text-center  ">
@@ -182,17 +168,12 @@
                         للأسنان & تجميل الأسنان & ….) وغيرها من الخدمات، يقدمها لك فريق طبي مميز مستخدماً أحدث
                         التكولوجيا في مجال طب الأسنان.
                     </p>
-                    <a href="#" class=" btn main-btn rounded-pill">اعرف المزيد</a>
+                    <a href="#" class=" btn main-btn rounded-pill mb-5">احجز معنا</a>
                 </div>
             </div>
         </div>
-
-
-
     </div>
     <!-- End Landing -->
-
-
     <!-- Start Stuff -->
     <div class="stuff" id="stuff">
         <div class="container">
@@ -213,9 +194,7 @@
                                 <source src="img/c-v1.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-
                         </dialog>
-
                     </div>
                 </div>
                 <div class="col-lg-5 mb-4  text-center text-md-end ">
@@ -237,13 +216,10 @@
 
 
                 </div>
-
             </div>
         </div>
     </div>
     <!-- End Stuff -->
-
-
     <!-- Start services -->
     <div class="services text-center pt-5 pb-5" id="services">
         <div class="container">
@@ -335,21 +311,17 @@
                                 Town</span>
                             وتعد من أكثر الطرق الفعالة للتخلص من تصبغات واصفرار الأسنان – المشكلة التي يعاني منها أغلب
                             الأشخاص.
-
                             تغير لون الأسنان واصفرارها قد يحدث بسبب تناول الشاي والقهوة والمكيفات بكميات كبيرة أو
                             التدخين وغيرها من المشكلات التي تعمل على تغيير اللون الطبيعي للأسنان.
-
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- End services -->
     <!-- Start Our Work -->
     <div class="our-work text-center pt-5 pb-5" id="our-work">
-
         <div class="container">
             <div class="main-title mt-5 mb-5 position-relative ">
                 <h2 class="fs-1">حالاتنا</h2>
@@ -398,10 +370,6 @@
         </div>
     </div>
     <!-- End Our Work -->
-
-
-
-
     <!-- Start Rating -->
     <div class="rate text-center pt-5 pb-5" id="rate">
         <div class="container">
@@ -431,12 +399,55 @@
         </div>
     </div>
     <!-- End Rating-->
+    <!-- Start Experiences -->
+    <!-- <div class="experiences text-center pt-5 pb-5" id="experiences">
+        <div class="container">
+            <div class="main-title mt-5 mb-5 position-relative ">
+                <h2 class="fs-1">تجارب العملاء</h2>
+
+            </div>
+        </div>
+    </div> -->
+    <!-- End Experiences -->
+
+    <!-- Start Appointment -->
+    <div class="appointment" id="appointment">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-lg-5 ">
+                    <form action="POST" class="me-lg-5" validate>
+                        <input type="text" class="form-control pt-3 pb-3 fs-4 mb-5" placeholder="اسم المريض"
+                            aria-label="اسم المريض" required>
+                        <input type="number" class="form-control pt-3 pb-3 fs-4 mb-5" placeholder="رقم الهاتف"
+                            aria-label="رقم الهاتف" required>
+                        <input type="text" class="form-control pt-3 pb-3 fs-4 mb-5" placeholder="المهنه"
+                            aria-label="المهنه">
+                        <input type="number" class="form-control pt-3 pb-3 fs-4 mb-5" placeholder="السن"
+                            aria-label="السن" required>
+                        <textarea class="form-control pt-3 pb-5 fs-4 mb-5" placeholder="ملاحظات"
+                            aria-label="ملاحظات"></textarea>
+                        <button class="btn secondery-btn rounded-pill border border-secondary w-100 fs-3 mt-5 mb-5"
+                            type="submit">احجز
+                            الان</button>
+                    </form>
+                </div>
+                <div class="col-md-1 col-lg-3 ">
+
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <img class="img-fluid h-75" src="img/location.jpeg" alt="Location">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Appointment -->
     <!-- Start Footer -->
     <div class="footer  pb-5 pt-5 text-white-50 text-center text-md-start">
         <div class="container">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-md-6 col-lg-3">
-                    <div class="info text-capitalize mb-5 d-flex justify-content-center flex-column align-items-center">
+                    <div class="info mb-5 d-flex justify-content-center flex-column align-items-center">
                         <img class="image-fluide w-50" src="img/logo-low.png" alt="">
                         <p class="text-black-50  mb-5 mt-3 text-center fs-4">يقدم عيادة Dental Town لطب الأسنان
                             خدمات
@@ -448,8 +459,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 ">
-                    <div class="links text-capitalize mb-5 text-end text-light">
+                <div class="col-md-6 col-lg-3  d-flex justify-content-center align-items-center text-end">
+                    <div class="links mb-5  text-light ">
                         <h5 class="text-black fs-2 fw-bold ">روابط سريعة</h5>
                         <ul class="list-unstyled lh-lg h-100 ">
                             <li class="pb-4 pt-5 fs-4"><a class="text-decoration-none text-light" href="#">الرئيسية</a>
@@ -467,8 +478,8 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="contact text-capitalize mb-5 text-end  text-light">
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center text-end">
+                    <div class="contact mb-5   text-light">
                         <h5 class="text-black fs-2 fw-bold">اتصل بنا</h5>
 
                         <ul class=" mt-5 list-unstyled fs-3 ">
@@ -488,7 +499,7 @@
                                 - 10 مساءاً من السبت إلى الخميس</li>
 
                         </ul>
-                        <ul class="d-flex mt-5 list-unstyled gap-5 text-black-50 text-center">
+                        <ul class="d-flex mt-5 list-unstyled gap-5 text-black-50  justify-content-center ">
                             <li><i class="fa-brands fa-facebook fa-2x"></i></li>
                             <li><i class="fa-brands fa-instagram fa-2x"></i></li>
                             <li><i class="fa-brands fa-whatsapp fa-2x"></i></li>
