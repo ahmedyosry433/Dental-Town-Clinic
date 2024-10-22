@@ -73,6 +73,7 @@
     background-color: black;
     margin-top: 10px;
     transition: transform 0.3s;
+    border: none;
     &:hover {
         background-color: var(--primary-color);
         transform: scale(1.1);
