@@ -191,15 +191,27 @@ dialog::backdrop {
 .stuff {
     margin-top: 10rem;
     margin-bottom: 10rem;
+    @include respond(phone) {
+        margin-bottom: 2rem;
+
+    }
 
     
 }
 .services {
     margin-bottom: 10rem;
+    @include respond(phone) {
+        margin-bottom: 2rem;
+
+    }
 
 }
 .our-work {
     margin-bottom: 10rem;
+    @include respond(phone) {
+        margin-bottom: 2rem;
+
+    }
 
     background-color: var( --light-primary-color);
     & ul {
@@ -225,7 +237,10 @@ dialog::backdrop {
 }
 .rate {
     margin-bottom: 10rem;
+    @include respond(phone) {
+        margin-bottom: 2rem;
 
+    }
 }
 .footer {
     background-color: var(--primary-color);

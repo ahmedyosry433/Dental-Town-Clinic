@@ -243,13 +243,22 @@ dialog::backdrop {
 .stuff {
   margin-top: 10rem;
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .stuff {
+      margin-bottom: 2rem; } }
 
 .services {
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .services {
+      margin-bottom: 2rem; } }
 
 .our-work {
   margin-bottom: 10rem;
   background-color: var(--light-primary-color); }
+  @media only screen and (max-width: 37.5em) {
+    .our-work {
+      margin-bottom: 2rem; } }
   .our-work ul.active {
     background-color: white; }
   .our-work ul li {
@@ -264,6 +273,9 @@ dialog::backdrop {
 
 .rate {
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .rate {
+      margin-bottom: 2rem; } }
 
 .footer {
   background-color: var(--primary-color); }
