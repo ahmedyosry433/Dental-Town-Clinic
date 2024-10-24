@@ -25,6 +25,7 @@
 .navbar-toggler {
     color: gray;
     border-color:gray ;
+    font-size: 2.5rem;
     &:focus {
         box-shadow: none;
     }
@@ -34,28 +35,7 @@
     
     }
 }
-.img-liner {
 
-    padding: 5px;
-        overflow: hidden;
-        position: relative;
-        &::before{
-            content: attr(data-work);
-            position: absolute;
-            height: calc(100% - 10px);
-            width: calc(100% - 10px);
-            background-color: #c1c0c07d;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            color: white;
-           
-        
-            font-size: 1.5rem;
-            
-        } 
-}
 .blurred-image {
     filter: blur(3px); /* Apply the blur */    
     
@@ -91,6 +71,17 @@
     opacity: 1;
     transform: translateX(0);
     
+}
+.slide-image {
+    width: 100%;
+    height: 70rem; 
+    object-fit: cover; 
+    object-position: center; 
+}
+.slide-container {
+    width: 100%;
+    max-width: 90rem; /* Adjust this value as needed */
+    margin: 0 auto; /* Centers the container */
 }
 .animated-button {
     background-color: var(--primary-color);
